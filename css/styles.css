@@ -1,0 +1,46 @@
+
+body {
+  background-image: url('../images/mac.jpg');
+  background-size: cover;
+  background-position: fixed;
+  width:auto;
+  height:auto;
+}
+
+
+div.port {
+  z-index: 10;
+  color: honeydew;
+  font-size: 60px;
+  font-style: bold;
+  margin-top: 170px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+
+}
+div.port .intro {
+  padding-top: 60px;
+  color:yellow;
+  font-size: 40px;
+  font-style: bold;
+}
+#folio {
+  font-style: italic;
+  font-weight: bold;
+  color: chocolate;
+  size: inherit;
+}
+a.aboutme {
+  padding-top: 40px;
+  margin-top: 80px;
+}
+.large-btn {
+  padding-top:80px;
+}
+button {
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+/* about pagr styles*/
