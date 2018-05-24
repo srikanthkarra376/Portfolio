@@ -1,0 +1,62 @@
+
+body {
+  background-image: url('../images/mac.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+   width:100%;
+   height:70vh;
+   overflow: hidden;
+}
+
+div.main {
+  background-color:rgba(0, 0,0,0.8);
+  margin:100px 50px 30px 50px; 
+  z-index:1;
+  
+
+
+}
+
+
+div.port {
+ 
+  z-index: 1;
+  color:white;
+  text-shadow: 5px;
+  font-size: 60px;
+  font-style: bold;
+  margin-top: 170px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+ 
+
+
+}
+div.port .intro {
+  z-index: 1;
+  opacity:1;
+  padding-top: 60px;
+  color:tomato;
+  font-size: 40px;
+  font-style: bold;
+}
+#folio {
+  font-style: italic;
+  font-weight: bold;
+  color: chocolate;
+  size: inherit;
+}
+a.aboutme {
+  padding-top: 40px;
+  margin-top: 80px;
+}
+.large-btn {
+  padding-top:60px;
+}
+button {
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+/* about pagr styles*/
