@@ -1,5 +1,9 @@
+
+/*-----INDEX PAGE STYLING---*/
+
+
 nav {
-  background-color:black;
+  background-color:rgba(2,2,2,0.8);
   position:fixed;
   width:100%;
   top:0;
@@ -17,14 +21,13 @@ nav {
 
 
 #links ul {
-
-  list-style-type: none;
   float:right;
   display: inline-flex;
+  list-style-type: none;
   
 }
 #links ul li {
-  padding:27px 80px 15px 80px;
+  padding:27px 75px 15px 75px;
  
 }
 #links ul li a {
@@ -66,9 +69,7 @@ color:red;
   padding-bottom:10px;
 }
 
-#aboutme .container #des {
-  background-color: black;
-}
+
 #aboutme .container {
   padding-top:90px;
   width:100%;
@@ -93,4 +94,20 @@ color:red;
 /*===============my wok page styling======*/
 #professional>h2,#personal>h2,#role>h4,.WebScrapper>h6,.AI>h6 {
   text-align: center;
+  text-decoration: blueviolet 40px;
+  text-transform: uppercase;
+  padding-bottom:30px;
+}
+#personal>h2,#role>h4,.WebScrapper>h6,.AI>h6{
+  padding-top:30px;
+}
+
+.WebScrapper>ul,.AI>ul {
+  padding-top: 30px;
+  list-style-type: disc;
+
+}
+#professional p,.WebScrapper>ul li ,.AI>ul li, #personal p,#personal>ul li {
+  line-height: 2;
+  font-size:20px;
 }
