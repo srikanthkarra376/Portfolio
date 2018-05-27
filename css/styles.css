@@ -90,3 +90,7 @@ color:red;
   padding-top:100px;
   
 }
+/*===============my wok page styling======*/
+#professional>h2,#personal>h2,#role>h4,.WebScrapper>h6,.AI>h6 {
+  text-align: center;
+}
