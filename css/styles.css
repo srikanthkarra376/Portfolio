@@ -71,12 +71,6 @@ color:red;
 
 
 
-#mywork .container {
-  width:100%;
-  height: 100vh;
-  padding-top:100px;
-  
-}
 #contact .container {
   width:100%;
   height: 100vh;
@@ -84,6 +78,17 @@ color:red;
   
 }
 /*-------my wok page -------*/
+
+
+#mywork .container {
+  background-color: blue;
+  color:white;
+  z-index:1000;
+  width:100%;
+  height: 100vh;
+  padding-top:100px;
+  
+}
 #professional>h2,#personal>h2,#role>h4,.WebScrapper>h6,.AI>h6 {
   text-align: center;
   text-decoration: blueviolet 40px;
