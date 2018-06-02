@@ -27,21 +27,25 @@ nav {
   padding:27px 75px 15px 75px;
  
 }
+
+
 #links ul li a {
   color:white;
   text-decoration:none;
   font-weight:500;
 }
+#links ul li a:active{
+  color:yellow;
+
+
+}
+
 
 #links ul li a:hover{
 color:red;
- 
-
 }
-#links ul li.active a {
-  border-bottom:2px solid red;
 
-}
+
 
 #showcase .note {
   z-index: -1;
@@ -65,9 +69,67 @@ color:red;
   margin-left: auto;
   padding-bottom:10px;
 }
+/*==================================ABOUTME-==========================*/
+.bg1{
+  background-color: #008080;
+}
+
+#aboutme .container {
+  background-color: beige;
+  position: relative;
+  padding-top:90px;
+  width:100%;
+  clear: both;
+ 
+
+}
+#aboutme .container>p{
+opacity: 1;
+font-size:70px;
+font-weight:600;
+color: chocolate; 
+text-shadow:black 0 2px 3px;; 
+
+}
+#profile{
+  box-sizing: border-box;
+}
+
+
+#profile img{
+  width: 100%;
+  box-shadow: 2px lightblue;
+  box-sizing: border-box;
+}
+
+#extra {
+  background-color: darkkhaki;
+}
+#extra .container {
+  z-index:1000;
+  width:100%;
+  padding-top:100px;
+
+}
+.habits h3,.interests h3 {
+  background-color:black;
+  color:rgb(76, 148, 124);
+  text-align:center;
+  font-size :1.5em;
+  font-weight:600;
+
+}
+.intro .fewwords p,.habits,.interests{
+  line-height: 1.5;
+  height: 100%;
+  font-size:22px;
+  font-weight:400;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /*==================================MYWORK-==========================*/
 .bg {
-  background-color:green;
+  background-color:greenyellow;
 }
 
 
@@ -97,52 +159,13 @@ color:red;
   line-height: 2;
   font-size:20px;
 }
-/*==================================ABOUTME-==========================*/
-
-#aboutme .container {
-  color: azure;
-  position: relative;
-  padding-top:90px;
-  width:100%;
-  background-color:black;
-}
-#aboutme .container>p{
-opacity: 1;
-font-size:70px;
-font-weight:600;
-color: chocolate; 
-text-shadow:black 0 2px 3px;; 
-
-}
-#profile{
-  box-sizing: border-box;
-}
 
 
-#profile img{
-  border-left:3px solid blue;
-  width: 100%;
-  box-shadow: 2px lightblue;
-  box-sizing: border-box;
-  border-radius: 60%;
-  
-
-}
-.intro .fewwords {
-  padding-left:5px;
-  padding-top: 50px;
-  
-}
-.intro .fewwords p,.habits,.interests{
-  line-height: 1.5;
-  height: 100%;
-  font-size:22px;
-  font-weight:400;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
-}
 /*===========================CONTACT=====================*/
+#contact{
+  background-color:#008080;
+  z-index: -1;
+} 
 #contact .container {
   z-index:1000;
   width:100%;
