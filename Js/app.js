@@ -33,10 +33,12 @@ link.addEventListener('click',function(e){
     link.classList.add('js');
   }
 
-})
-//enabling smooth scrolling==
+});
 
 
+
+
+//enabling smooth scrolling
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -51,3 +53,21 @@ $(function() {
     }
   });
 });
+//scroll top button
+
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300|| document.documentElement.scrollTop > 50) {
+      document.getElementById("myBtn").style.display = "block";
+  } else {
+      document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function gotoTop() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
