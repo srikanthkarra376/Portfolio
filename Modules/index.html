@@ -13,14 +13,14 @@
     <!--NAVBAR-->
    
         <header>
-                <nav class="nav-menu navbar-expand-lg fixed" id="home">
-                        <div class="container col-xs-3 col-md-12">
+                <nav class="nav-menu navbar-expand-lg" id="home">
+                        <div class="container col-xs-3 col-md-3 col-sm-3 col-lg-12">
                             <div class="row">
-                                 <span  id="logo" class="col-4"><h1 style="color:rgb(253, 249, 249)">Port<strong><em style="color:red;">Folio</em></strong></h1></span>
-                                        <div id="links" class="col-8">
+                                 <span  id="logo" class="col-lg-2 col-md-0"><h1 style="color:rgb(253, 249, 249)">Port<strong><em style="color:red;">Folio</em></strong></h1></span>
+                                        <div id="links" class="col-10">
                                             <div class="row">
                                                  <ul>
-                                                 <li class="col item"><a href="#">HOME</a></li>
+                                                 <li class="col item"><a href="#showcase">HOME</a></li>
                                                  <li  class="col item"><a  href="#aboutme">ABOUTME</a></li>
                                                  <li class="col item"><a href="#mywork">MYWORK</a></li>
                                                  <li class="col item"><a href="#contact">CONTACT</a></li>
@@ -59,7 +59,7 @@
                                       <div class="fewwords">
                                           <h3>Few words aboutme:</h3>
                                           <p>A part from my professional experience I am a cool guy with lot of patience<br> I always believe
-                                            in myself. I respect and value the people opinions. I always<br>want to listen to the people , I trust people easily and I show much care and<br>Importance to everyone around me
+                                            in myself. I respect and value<br> the people opinions. I always<br>want to listen to the people , I trust people easily and I show much care and<br>Importance to everyone around me
                                            I think in the fastest  growing world time<br>is equals , <strong><em>Money is not Everything ? 
                                              But you need money for everything</em></strong></p>
                                           </div>
@@ -166,21 +166,22 @@
        <section id="contact">
           <div class="container">
               <div class="row">
-                    <form action="#" method="post">
-                            <formgroup>
-                                 <label for="name">Name:</label>
-                                 <input type="text" name="name" id="name" placeholder="enter your name here"/>
-                             </formgroup>
-                             <br>
-                             <formgroup>
-                                     <label for="email">Email:</label>
-                                     <input type="email" name="email" id="email" placeholder="enter your email here"/>
-                             </formgroup>
-                             <br>
-                                 <formgroup>
-                                     <input type="submit" value="SUBMIT"/>
-                                 </formgroup>
-                         </form>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                          </div>
                         </div>
               </section>
@@ -192,8 +193,6 @@
 
     
    
-
-  
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
