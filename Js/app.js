@@ -71,3 +71,13 @@ function gotoTop() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+//set time out to the scroll top
+
+$('#myBtn').click(function(){
+  setTimeout(function(){
+      var id = $(this);
+      $('html, body').animate({
+          scrollTop:$(id).offset().top
+      }, 'slow');
+  }, 1200);
+});

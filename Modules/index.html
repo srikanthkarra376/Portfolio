@@ -15,10 +15,14 @@
    
    
         <header>
-                <nav class="nav-menu navbar-expand-lg" id="home">
+                <nav class="nav-menu navbar-expand-lg fixed" id="home">
                         <div class="container col-xs-3 col-md-3 col-sm-3 col-lg-12">
                             <div class="row">
-                                 <span  id="logo" class="col-lg-2 col-md-0"><h1 style="color:rgb(253, 249, 249)">Port<strong><em style="color:red;">Folio</em></strong></h1></span>
+                                 <span  id="logo" class="col-lg-2 col-md-0" title="portfolio site">
+                                     <a  style="text-decoration: none;"href="#">
+                                     <h1 style="color:rgb(253, 249, 249)">Port<strong><em style="color:red;">Folio</em></strong>
+                                     </h1></a>
+                                  </span>
                                         <div id="links" class="col-10">
                                             <div class="row">
                                                  <ul>
@@ -26,6 +30,7 @@
                                                  <li  class="col item"><a  href="#aboutme">ABOUTME</a></li>
                                                  <li class="col item"><a href="#mywork">MYWORK</a></li>
                                                  <li class="col item"><a href="#contact">CONTACT</a></li>
+                                                 <li class="col item"><a href="blog.html">BLOG</a></li>
                                              </ul>
                                           </div>
                                         </div>
@@ -38,10 +43,7 @@
         <!--SHOWCASE STARTS-->
         <section id="showcase">
           <div class="note">
-                 <h1 style="color:aliceblue">Hi there</h1>
-                <h1 style="color:springgreen">I'M srikanth Karra</h1>
-                <h1 style="color:thistle">Welcome to my Website</h1>
-                <h1 style="color:yellow">I'M A Front-End Web-Developer </h1>
+                <h1 id="welcomenote"></h1>
           </div>
         </section> 
         <!--SHOWCASE ENDS-->
@@ -188,7 +190,7 @@
                         </div>
               </section>
 
-              <button onclick="gotoTop()" type="button" id="myBtn">Top</button>
+              <button onclick="gotoTop()" type="button" id="myBtn" title="Go to Top">Top</button>
    
        
        
