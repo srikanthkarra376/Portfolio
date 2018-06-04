@@ -60,7 +60,23 @@ nav {
 #links ul li a:hover{
 color:red;
 }
-
+#smetha {
+  font-size:50px;
+  font-weight: 800;
+  text-align: center;
+  opacity: 0.5;
+}
+#sametha em {
+  color:rgb(238, 192, 192);
+  text-shadow: 2px 2px#000;
+  z-index:1000;
+}
+#willsmith {
+  color:greenyellow;
+  font-style: italic;
+  font-size:1.5em;
+  text-align: end;
+}
 
 
 #showcase .note {
