@@ -207,3 +207,6 @@ text-shadow:black 0 2px 3px;;
   color:rgb(94, 13, 160);
   text-align: center;
 }
+#blogdiv p {
+  font-size:50px;
+}
