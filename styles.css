@@ -102,6 +102,26 @@ color:red;
   z-index:1;
   
 }
+#srikanth p {
+  padding-top:50px;
+  color:white;
+  font-size: 2em;
+  font-weight:inherit;
+}
+#shortinfo {
+  padding:0 50px;
+  height:300px;
+  margin:90px 50px 90px 50px;
+  text-align:center;
+  background-color:rgba(245, 238, 238, 0.8);
+}
+#shortinfo p {
+padding-top: 30px;
+color:rgb(66, 63, 61);
+font-size:2.4em;
+font-weight:500;
+
+}
 /*==================================ABOUTME-==========================*/
 
 
