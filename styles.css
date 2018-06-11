@@ -82,7 +82,7 @@ color:red;
 #showcase .note {
   z-index: -1;
   text-align: center;
-  background-image: url('../images/sunset.jpeg');
+  background-image: url('./images/sunset.jpeg');
   filter:alpha(opacity=50);
   background-size: cover;
   background-position: center;
