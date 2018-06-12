@@ -7,8 +7,6 @@
     bottom: 20px; 
     right: 30px; 
     z-index: 99; 
-    border: none; 
-    outline: none; 
     background-color: rgb(235, 221, 221); 
     color: rgb(29, 26, 26); 
     cursor: pointer; 
@@ -84,66 +82,68 @@ nav {
 #links ul li a:hover{
 color:red;
 }
-#smetha {
-  font-size:50px;
-  font-weight: 800;
-  text-align: center;
-  opacity: 0.5;
-}
-#sametha em {
-  color:rgb(238, 192, 192);
-  text-shadow: 2px 2px#000;
-  z-index:1000;
-}
-#willsmith {
-  color:greenyellow;
-  font-style: italic;
-  font-size:1.5em;
-  text-align: end;
-}
 
+/*==========showcase======*/
+#showcase {
+  width:100%;
+  height:100vh;
+  background: #dae2f8; 
+  background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4); 
+  background: linear-gradient(to right, #dae2f8, #d6a4a4); 
+}
 
 #showcase .note {
   z-index: -1;
   text-align: center;
-  background-image: url('./images/sunset.jpeg');
+ 
   filter:alpha(opacity=50);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width:100%;
-  height: 100vh;
+
+
+}
+
+#showcase #firstcolumn {
+color: lightseagreen;
+margin-top: 80px;
+
+
+}
+#showcase #firstcolumn p {
+ font-weight:700;
+ font-size:3.5rem;
+ line-height: 1.5;
+}
+#showcase #firstcolumn #sri {
   
+ 
+
+
+}
+#showcase #firstcolumn #kanth {
+ 
+ color:red;
+}
+#showcase #secondcolumn p {
+  border-left: 8px dashed rebeccapurple;
+  padding-left: 40px;
 
 }
 
-
-#showcase .note  h1  {
-  font-size: 60px;
-  padding-top: 40px;
-  margin-left: auto;
-  padding-bottom:10px;
-  z-index:1;
-  
-}
-#srikanth p {
-  padding-top:50px;
-  color:white;
-  font-size: 2em;
-  font-weight:inherit;
-}
 #shortinfo {
-  padding:0 50px;
+  
   height:300px;
-  margin:90px 50px 90px 50px;
-  text-align:center;
-  background-color:rgba(245, 238, 238, 0.8);
+  margin-top: 80px;
+ 
+ 
 }
 #shortinfo p {
-padding-top: 30px;
-color:rgb(66, 63, 61);
-font-size:2.4em;
-font-weight:500;
+color:green;
+font-size:3.5rem;
+font-weight:700;
+line-height: 1.5;
 
 }
 /*==================================ABOUTME-==========================*/
