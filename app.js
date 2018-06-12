@@ -19,7 +19,14 @@ $(window).scroll(function() {
 
 }); */
 
-
+function myFunction() {
+  var x = document.getElementById("#links");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
 
 
 
