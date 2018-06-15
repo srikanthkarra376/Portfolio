@@ -1,23 +1,4 @@
-/* Shrink nav 
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 100) {
-    $('nav').addClass('shrink');
-  } else {
-    $('nav').removeClass('shrink');
-  }
-});
- */
-
-/* links.forEach(function(link){
- link.addEventListener('click',function(lnk){
-  if(lnk.classList.contains('active')){
-    lnk.classList.remove('active');
-  }else{
-    lnk.classList.add('active');
-  }
- });
-
-}); */
+"use strict";
 
 function myFunction() {
   var x = document.getElementById("#links");
