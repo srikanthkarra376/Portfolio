@@ -25,14 +25,9 @@
   color:blueviolet;
  
 }
-.btn a {
-  margin-top:30px;
-  margin-left:350px;
-}
-
-
 
 /*----section-2----*/
+
 #section2 {
   font-family: 'Handlee', cursive;
   font-size:25px;
@@ -53,20 +48,32 @@
 }
 /*----section-3----*/
 #section3 {
- 
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 20px;
   padding-top:50px;
   padding-bottom:70px;
-  background-color: blueviolet;
+ 
+}
+#section3 h5 {
+  color:green;
+}
+#section3 .container>h1 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 /*----section-4----*/
 #section4 {
   height:100vh;
   padding-top:70px;
   padding-bottom:70px;
+}
+#section4 .container{
   background: #77A1D3;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 /*----section-5----*/
 #section5 {
