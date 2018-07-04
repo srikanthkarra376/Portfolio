@@ -20,13 +20,9 @@ body {
   cursor: pointer;
 }
 #first #logo i:hover {
-  
-  color:red;
-
-
+ color:red;
 }
 #first h1 {
- 
 float:right;
 padding-right: 50px;
 }
@@ -75,18 +71,15 @@ font-weight: 500;
 }
 
 /*contact*/
+#contact #box-1 {
+  margin:auto 50px;
+}
+label[for="Name"],label[for="email"],label[for="phone"]{
 
-contact {
- 
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  
-} 
-
-
-
-input[type=text],input[type="email"]{
+  color:rgba(99, 113, 247, 1);
+  font-size:25px;
+}
+input[type=text],input[type="email"],input[type="tel"]{
   width: 75%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -94,24 +87,27 @@ input[type=text],input[type="email"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size:inherit;
 }
 input[type=submit] {
-  width: 50%;
-  background-color: #4CAF50;
-  color: white;
+  width: 75%;
+
+  color:#000;
   padding: 14px 20px;
-  margin: 8px 55px;
+  margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
  
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: rgb(16, 107, 224);
+  color:white;
  
 }
 textarea {
-  width: 90%;
+  font-size:inherit;
+  width: 75%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -126,7 +122,8 @@ footer div {
 /*footer*/
 
 #footer {
-  background-color:black;
+  margin-top:50px;
+  background-color:rgb(247, 162, 162);
   color:white;
   font-size:inherit;
   
@@ -137,3 +134,24 @@ footer div {
   text-align:center;
   padding-top:25px ;
 }
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(17, 16, 16);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#top:hover {
+  background-color: #555;
+}
+
+
+
