@@ -1,2 +1,2 @@
 # portfolio
-This Project , My portfolio Is present at online https://www.karrasrikanth.com
+This Project , My portfolio Is present at online http://www.karrasrikanth.com
