@@ -1,41 +1,57 @@
-body  {
-  margin:10px;;
-  padding:10px;
-
-}
- #nav-bar {
+body {
   margin:0 50px;
-  display :grid;
-  grid-template-columns: 150px auto;
-
 }
-#nav-bar ul{
-display: none;
-
+#first {
+  display: grid;
+  grid-template-columns: 100px auto;
+ 
 }
-i.fas {
-  float:right;
-  margin-top:20px;
-  cursor: pointer;
-  padding-right:10px;
-  color:violet;
+#menu-ul {
+  display: none;
 }
-#nav-bar div a {
-  text-decoration: none;
+#first #logo {
+  color: darkorange;
+  padding-top:25px;
+  float: left;
 }
-#nav-bar div a h4 {
-  color:green;
-  cursor: pointer;
+#first h4 {
+ 
+float:right;
+padding-right: 50px;
 }
-ul.menu {
- list-style-type: none;
-text-align:center;
-margin-left: 20px;
-
+#menu {
+  text-align:center;
+  
 }
-ul.menu li {
+#menu #menu-ul {
+list-style: none;
+padding:0;
+background-color:gray;
+color:white;
+}
+#menu-ul li {
   padding:10px;
-  font-size:20px;
-  font-weight:300;
+  
+
+}
+#menu-ul li a {
+  text-decoration: none;
+  color:white;
+}
+#showcase {
+  background:-webkit-gradient(
+    linear, left top, left bottom, from(rgba(31, 30, 30, 0.8)),
+    to(rgba(133, 91, 91, 0.2)), color-stop(.5,#110b0b)
+  ),
+	 url('blank-business-composition-373076.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+ 
+}
+#showcase h1 {
+  text-align:center;
+  padding:30px 20px;
+  z-index:1;
 
 }
