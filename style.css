@@ -1,20 +1,22 @@
 body {
-  margin:0 50px;
+ 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width:vw;
   height:vh;
  
 }
 #first {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 50% auto;
  
 }
 #menu-ul {
   display: none;
 }
 #first #logo {
+  margin-left:20px;
   color: darkorange;
-  padding-top:25px;
+  padding-top:40px ;
   float: left;
   font-size:20px;
   cursor: pointer;
@@ -22,12 +24,18 @@ body {
 #first #logo i:hover {
  color:red;
 }
-#first h1 {
-float:right;
+#first a {
+  text-decoration: none;
+  margin-left:20px;
+}
+#first a h1 {
+color:blue;
 padding-right: 50px;
+
 }
 #menu {
   text-align:center;
+  
   
 }
 #menu #menu-ul {
@@ -45,10 +53,21 @@ background-color:rgba(133, 91, 91, 0.2);
 }
 #menu-ul li a {
   text-decoration: none;
-  color:#000;
+  
   font-size: 20px;
-font-weight: 500;
+font-weight: 800;
+
+
 }
+#menu-ul li a:hover {
+
+  color:orange;
+  text-decoration:underline;
+  transition: .5s;
+}
+/*showcase*/
+
+
 #showcase {
   background:-webkit-gradient(
     linear, left top, left bottom, from(rgba(31, 30, 30, 0.8)),
@@ -57,10 +76,12 @@ font-weight: 500;
 	 url('blank-business-composition-373076.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 40px;
  
  
 }
 #showcase h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  
   text-align:center;
   padding:30px 20px 10px 20px;
@@ -68,7 +89,55 @@ font-weight: 500;
   opacity:1;
   color:white;
   text-shadow:2px px #4d4a4a79;
+
 }
+
+
+/*about*/
+#about h1  {
+  color:violet;
+  text-align:center;
+  text-decoration: underline;
+  font-weight: 500;
+  padding:10px;
+
+}
+#about #imagediv{
+  text-align:center;
+  margin-bottom:20px;
+
+}
+#about img {
+  width:80%;
+  height:auto;
+  
+
+  box-shadow: 10px 10px 5px grey;
+}
+#about #content {
+  margin:0;
+  padding:0;
+  background-image: url('patterns.jpg');
+}
+#about #content p {
+  padding:20px;
+margin:10px 30px;
+  text-align:justify;
+ color:coral;
+  font-size:20px;
+  font-family: cursive;
+  opacity: 1;
+ 
+}
+/*work*/
+#work {
+  color:white;
+  background: #5A3F37;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 
 /*contact*/
 #contact #box-1 {

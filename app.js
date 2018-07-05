@@ -57,3 +57,16 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {       
+        $('img').fadeIn(3000);    
+    } else {
+        $('img').fadeOut(1000);   
+    }
+  });
+
+  
+  
+    
