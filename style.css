@@ -29,7 +29,7 @@ body {
   margin-left:20px;
 }
 #first a h1 {
-color:blue;
+
 padding-right: 50px;
 
 }
@@ -121,9 +121,9 @@ font-weight: 800;
 }
 #about #content p {
   padding:20px;
-margin:10px 30px;
+  margin:10px 30px;
   text-align:justify;
- color:coral;
+  color:coral;
   font-size:20px;
   font-family: cursive;
   opacity: 1;
@@ -131,13 +131,34 @@ margin:10px 30px;
 }
 /*work*/
 #work {
-  color:white;
-  background: #5A3F37;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin:20px 30px;
+font-size:20px;
+padding:20px 20px;
+
+ 
 
 }
+#work h1,h3,h4{
+  text-align:center;
+  text-decoration: underline;
+}
+#work h3,h4{
+  color:green;
+}
+#work #box{
+  margin:10px 10px;
+  text-align:center;
 
+}
+#work #box p{
+  text-align:center;
+  padding:20px auto;
+}
+#work #box p a {
+  text-decoration: none;
+  color:red;
+  cursor: pointer;
+}
 
 /*contact*/
 #contact #box-1 {
@@ -156,11 +177,11 @@ input[type=text],input[type="email"],input[type="tel"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size:inherit;
+  font-size:22px;
 }
 input[type=submit] {
   width: 75%;
-
+  font-size:22px;
   color:#000;
   padding: 14px 20px;
   margin: 8px 0;
@@ -183,6 +204,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size:22px;
 }
 footer div {
   font-family:Verdana, Geneva, sans-serif;
