@@ -49,13 +49,13 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 
   //side nav bar finctions
   $('#first #logo i').on('click',function(){
-    $("#menu #menu-ul").css('width','150').show().fadeIn(1000);
+    $("#menu #menu-ul").slideDown(1000).css('width','150');
    });
-   $('#menu #menu-ul li a.closebtn').click(function(){
-     $("#menu #menu-ul").hide();
+   $('#menu #menu-ul li a').click(function(){
+     $("#menu #menu-ul").slideUp(1000);
    });
 
-
+  //onscroll function
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 100) {       
         $('img').fadeIn(3000);    
@@ -63,7 +63,11 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
         $('img').fadeOut(1000);   
     }
   });
+  
 
+
+
+  
 
   
   

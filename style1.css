@@ -3,12 +3,19 @@
   body {
  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin:0;
-    padding:0;
-
+    width:vw;
+    height:vh;
    
   }
+  #first {
+    display: flex;
+    position: relative;
+  }
+  #first a {
+    margin-top:40px;
+   
   
+  }
   /* #first {
     display: grid;
     grid-template-columns: 50% auto;
@@ -16,12 +23,11 @@
   } */
   
   #first #logo {
-    display: none;
     top:0;
     position:fixed;
     margin-left:20px;
     color: darkorange;
- 
+    padding-top:40px ;
     float: left;
     font-size:30px;
     cursor: pointer;
@@ -44,46 +50,45 @@
     text-align:center;
   }
   #menu-ul {
-    display: flex;
-    float: right;
+    display: none;
   }
-
- 
-   
+  .menu-disaplayNone{
+    display:none;
+  }
+  
   #menu #menu-ul {
-    display: flex;
-    float: right;
-    margin-top:0;
-  height: 80px;
-  width: 100%;
+  height: 100%;
+  width: 0;
   position: fixed;
-  background-color:black;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:hsl(180, 100%, 30%);
   transition: 0.5s;
-  top :0;
+  padding-top: 60px;
   list-style: none;
   
-  } 
- 
+  }
+  #menu-ul li{
+    margin-top: 50px;
+  }
    #menu-ul li a {
-    text-decoration: none;
-   margin-left:50px;
-   padding:20px 30px;
 
+    text-decoration: none;
+    padding-right:30px;
    
   font-weight: 300;
   
   text-decoration: none;
   font-size: 22px;
-  color:red;
+  color:white;
   display: block;
   transition: 0.3s; 
   }
-   
+  
   
   
   #menu-ul li a.closebtn {
-    display: none;
     position: absolute;
     top:0;
     margin-top: 30px;
@@ -112,19 +117,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 40px;
-    background-position: center;
-   height:100vh;
+    margin-top: 100px;
    
    
   }
   #showcase h1 {
-    font-size:2.5em;
-    position: absolute;
-    padding:300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align:left;
-    
-
+   
+    text-align:center;
+    padding-top:50px;
+    z-index:1;
     opacity:1;
     color:white;
     text-shadow:2px px #4d4a4a79;

@@ -3,53 +3,51 @@
   body {
  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width:vw;
-    height:vh;
+  margin:0;
+  padding:0;
    
   }
-  #first {
-    display: flex;
-    position: relative;
-  }
-  #first a {
-    margin-top:40px;
-   
   
-  }
-  /* #first {
-    display: grid;
-    grid-template-columns: 50% auto;
-   
-  } */
+  
+#first {
+  
+   margin:50px auto;
+  } 
   
   #first #logo {
+    margin:0;
+    z-index:1;
     top:0;
     position:fixed;
-    margin-left:20px;
-    color: darkorange;
-    padding-top:40px ;
+    color: rgb(252, 204, 145);
+    padding-top:10px;
     float: left;
-    font-size:30px;
-    cursor: pointer;
+   cursor: pointer;
+   width:100%;
+   background-attachment: fixed;
+   background-color:hsl(180, 100%, 30%);
   
+  
+  }
+  #first #logo i {
+    font-size:2em;
+    padding:20px;
   }
   #first #logo i:hover {
    color:red;
-  }
-  #first a {
-    text-decoration: none;
-    margin-left:20px;
-   
-  }
-  #first a h1 {
-  
-  padding-right: 50px;
   
   }
-  #menu {
+  #first #logo  span{
+    font-size:1.5em;
+    margin-left:0;
+  }
+ #first #menu {
+    margin:0;
+    top:0;
     text-align:center;
   }
   #menu-ul {
+    text-align:center;
     display: none;
   }
   
@@ -61,30 +59,24 @@
   top: 0;
   left: 0;
   background-color:hsl(180, 100%, 30%);
-  
   transition: 0.5s;
   padding-top: 60px;
   list-style: none;
   
   }
   #menu-ul li{
-    margin-top: 50px;
+    margin-top: 30px;
   }
    #menu-ul li a {
-    text-decoration: none;
+     text-decoration: none;
     padding-right:30px;
-   
-  font-weight: 300;
-  
-  text-decoration: none;
-  font-size: 22px;
+   text-decoration: none;
+   font-weight: 700;
+  font-size:1.5em;
   color:white;
   display: block;
   transition: 0.3s; 
   }
-  
-  
-  
   #menu-ul li a.closebtn {
     position: absolute;
     top:0;
@@ -105,6 +97,7 @@
   
   
   #showcase {
+    top:0;
     background:-webkit-gradient(
       linear, left top, left bottom, from(rgba(31, 30, 30, 0.8)),
       to(rgba(133, 91, 91, 0.2)), color-stop(.5,#4d4a4a79)
@@ -113,7 +106,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 40px;
-    margin-top: 100px;
+    margin-top: 80px;
    
    
   }
@@ -121,8 +114,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
     text-align:center;
-    padding:30px 20px 10px 20px;
-    z-index:1000;
+    padding-top:40px;
+    z-index:1;
     opacity:1;
     color:white;
     text-shadow:2px px #4d4a4a79;
@@ -170,7 +163,7 @@
   #work {
   margin:20px 30px;
   font-size:20px;
-  padding:20px 20px;
+  padding:80px 20px;
   
    
   
@@ -198,9 +191,17 @@
   }
   
   /*contact*/
-  #contact #box-1 {
-    margin:auto 50px;
+  #contact {
+    padding-top:80px;
   }
+ 
+   #contact #box {
+    text-align:l;
+    width:50%;
+   margin:0 auto ;
+   }
+
+ 
   label[for="Name"],label[for="email"],label[for="phone"]{
   
     color:rgba(99, 113, 247, 1);
