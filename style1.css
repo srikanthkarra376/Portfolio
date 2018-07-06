@@ -3,19 +3,12 @@
   body {
  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width:vw;
-    height:vh;
+    margin:0;
+    padding:0;
+
    
   }
-  #first {
-    display: flex;
-    position: relative;
-  }
-  #first a {
-    margin-top:40px;
-   
   
-  }
   /* #first {
     display: grid;
     grid-template-columns: 50% auto;
@@ -23,11 +16,12 @@
   } */
   
   #first #logo {
+    display: none;
     top:0;
     position:fixed;
     margin-left:20px;
     color: darkorange;
-    padding-top:40px ;
+ 
     float: left;
     font-size:30px;
     cursor: pointer;
@@ -50,42 +44,46 @@
     text-align:center;
   }
   #menu-ul {
-    display: none;
+    display: flex;
+    float: right;
   }
-  
+
+ 
+   
   #menu #menu-ul {
-  height: 100%;
-  width: 0;
+    display: flex;
+    float: right;
+    margin-top:0;
+  height: 80px;
+  width: 100%;
   position: fixed;
+  background-color:black;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:hsl(180, 100%, 30%);
-  
   transition: 0.5s;
-  padding-top: 60px;
+  top :0;
   list-style: none;
   
-  }
-  #menu-ul li{
-    margin-top: 50px;
-  }
+  } 
+ 
    #menu-ul li a {
     text-decoration: none;
-    padding-right:30px;
+   margin-left:50px;
+   padding:20px 30px;
+
    
   font-weight: 300;
   
   text-decoration: none;
   font-size: 22px;
-  color:white;
+  color:red;
   display: block;
   transition: 0.3s; 
   }
-  
+   
   
   
   #menu-ul li a.closebtn {
+    display: none;
     position: absolute;
     top:0;
     margin-top: 30px;
@@ -105,6 +103,7 @@
   
   
   #showcase {
+    top:0;
     background:-webkit-gradient(
       linear, left top, left bottom, from(rgba(31, 30, 30, 0.8)),
       to(rgba(133, 91, 91, 0.2)), color-stop(.5,#4d4a4a79)
@@ -113,16 +112,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 40px;
-    margin-top: 100px;
+    background-position: center;
+   height:100vh;
    
    
   }
   #showcase h1 {
+    font-size:2.5em;
+    position: absolute;
+    padding:300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-    text-align:center;
-    padding:30px 20px 10px 20px;
-    z-index:1000;
+    text-align:left;
+    
+
     opacity:1;
     color:white;
     text-shadow:2px px #4d4a4a79;
