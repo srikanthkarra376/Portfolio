@@ -1,20 +1,18 @@
 
 
   body {
- 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin:0;
   padding:0;
    
   }
-  
-  
 #first {
-  
-   margin:50px auto;
+ margin:50px auto;
+
   } 
   
   #first #logo {
+    overflow:hidden;
     margin:0;
     z-index:1;
     top:0;
@@ -26,20 +24,23 @@
    width:100%;
    background-attachment: fixed;
    background-color:hsl(180, 100%, 30%);
-  
-  
-  }
+}
+#first #logo div:not(i) {
+  font-weight: 900;
+}
   #first #logo i {
     font-size:2em;
     padding:20px;
   }
   #first #logo i:hover {
-   color:red;
-  
+   color:white;
   }
-  #first #logo  span{
-    font-size:1.5em;
+  #first #logo div{
+    display:flex;
     margin-left:0;
+  }
+  #first #logo div h1{
+    padding-top:3px;
   }
  #first #menu {
     margin:0;
@@ -65,14 +66,14 @@
   
   }
   #menu-ul li{
-    margin-top: 30px;
+    margin-top: 75px;
   }
    #menu-ul li a {
-     text-decoration: none;
-    padding-right:30px;
-   text-decoration: none;
-   font-weight: 700;
-  font-size:1.5em;
+  text-decoration: none;
+  padding-right:30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size:2.5em;
   color:white;
   display: block;
   transition: 0.3s; 
@@ -112,7 +113,6 @@
   }
   #showcase h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
     text-align:center;
     padding-top:40px;
     z-index:1;
@@ -121,8 +121,6 @@
     text-shadow:2px px #4d4a4a79;
   
   }
-  
-  
   /*about*/
   #about h1  {
     color:violet;
@@ -140,9 +138,7 @@
   #about img {
     width:80%;
     height:auto;
-    
-  
-    box-shadow: 10px 10px 5px grey;
+     box-shadow: 10px 10px 5px grey;
   }
   #about #content {
     margin:0;
@@ -161,13 +157,11 @@
   }
   /*work*/
   #work {
-  margin:20px 30px;
-  font-size:20px;
-  padding:80px 20px;
-  
-   
-  
-  }
+    top:0;
+    background-color: #000;
+    color:white;
+    font-size:20px;
+}
   #work h1,h3,h4{
     text-align:center;
     text-decoration: underline;
@@ -176,9 +170,14 @@
     color:green;
   }
   #work #box{
+    padding-top:80px ;
+    padding-top:80px ;
     margin:10px 10px;
     text-align:center;
   
+  }
+  #work #box:nth-child(1) {
+    padding-bottom:80px;
   }
   #work #box p{
     text-align:center;
@@ -188,6 +187,10 @@
     text-decoration: none;
     color:red;
     cursor: pointer;
+  }
+  #work ul {
+    list-style-type:none;
+    text-align:center;
   }
   
   /*contact*/

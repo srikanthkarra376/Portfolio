@@ -49,7 +49,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 
   //side nav bar finctions
   $('#first #logo i').on('click',function(){
-    $("#menu #menu-ul").slideDown(1000).css('width','150');
+    $("#menu #menu-ul").slideDown(1000).css('width','200');
    });
    $('#menu #menu-ul li a').click(function(){
      $("#menu #menu-ul").slideUp(1000);
