@@ -78,15 +78,22 @@
   list-style: none;
   
   }
+  .animated {
+    position: absolute;
+    width:200px;
+    left:200px;
+    display: block;
+  }
   #menu-ul li{
     margin-top: 75px;
+    padding:0;
   }
    #menu-ul li a {
   text-decoration: none;
   padding-right:30px;
   text-decoration: none;
-  font-weight: 700;
-  font-size:2.5em;
+  font-weight: 400;
+  font-size:1.5em;
   color:white;
   display: block;
   transition: 0.3s; 
@@ -210,11 +217,9 @@
   #contact {
     padding-top:80px;
   }
- 
-   #contact #box {
-    text-align:l;
-    width:50%;
-   margin:0 auto ;
+ #contact #box {
+    text-align:center;
+    margin:20px 20px;
    }
 
  
@@ -231,11 +236,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size:22px;
+    font-size:18px;
   }
   button[type=submit] {
     width: 75%;
-    font-size:22px;
+    font-size:18px;
     color:#000;
     padding: 14px 20px;
     margin: 8px 0;

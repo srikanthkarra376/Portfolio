@@ -50,13 +50,39 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
     }
   });
 
-  //side nav bar animations
+ //* /side nav bar animations
+  //$('#first #logo i').on('click',function(){
+   // $("#menu #menu-ul").addClass('animated bounceOutLeft').css("width","300");
+    
+    //addClass('animated fadeIn').css('width','200');
+ //  });
+ //  $('#menu #menu-ul li a').click(function(){
+  //   $("#menu #menu-ul").slideUp(1000);
+  // });  */
+
+
+/*   const menuIcon = document.querySelector('#first #logo i');
+ const  menuUl= document.querySelector('#menu #menu-ul');
+ menuIcon.addEventListener('click',function(){
+   menuUl.classList.add('animated');
+ }); */
+ $('#first #logo i').click(function(){
+  $('#menu #menu-ul').css("width","150").show('slow').addClass(' animated rotateInUpLeft');
+ });
+ $('#menu #menu-ul li a').click(function(){
+  $('#menu #menu-ul').hide(1000);
+});
+
+
+
+   /* //animation effects
   $('#first #logo i').on('click',function(){
-    $("#menu #menu-ul").slideDown(1000).css('width','200');
-   });
-   $('#menu #menu-ul li a').click(function(){
-     $("#menu #menu-ul").slideUp(1000);
-   });
+    $('#menu #menu-ul').animate('bounceOutLeft');
+  });
+
+    $('#menu #menu-ul li a').click(function(){
+      $("#menu #menu-ul");
+    }); */
 
   //onscroll function
   $(window).scroll(function() {
@@ -79,21 +105,25 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 };
 firebase.initializeApp(config);
 
+ //initializing firebase in app
+ var messageRef = firebase.database().ref('messages')
+
 
 //form values
 document.getElementById('contact-form').addEventListener('submit',submitForm);
 function submitForm(e){
   e.preventDefault();
-  function getInput(id){
-     return document.getElementById(id).value;
  
- 
-  }
   //get all inputs
   var name = getInput('name');
   var email = getInput('email');
   var phone  = getInput('phone');
   var message = getInput('message');
+
+  //function referenced to DOM
+  function getInput(id){
+    return document.getElementById(id).value;
+   }
 
   //save values to data base
   saveMessage(name,email,phone,message);
@@ -105,12 +135,6 @@ function submitForm(e){
   document.getElementById('contact-form').reset();
 };
 
-
-//initializing firebase in app
-
-var messageRef = firebase.database().ref('messages');
-
-
 //save message to fire base
 function saveMessage(name,email,phone,message) {
   var newMessageRef = messageRef.push();
@@ -120,7 +144,7 @@ function saveMessage(name,email,phone,message) {
     phone:phone,
     message :message
   });
-}
+};
 
 
 
