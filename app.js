@@ -1,3 +1,6 @@
+
+//go top button
+
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 100) {       
       $('#top').fadeIn(200);    
@@ -47,7 +50,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
     }
   });
 
-  //side nav bar finctions
+  //side nav bar animations
   $('#first #logo i').on('click',function(){
     $("#menu #menu-ul").slideDown(1000).css('width','200');
    });
@@ -64,6 +67,19 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
     }
   });
 
+
+  // Initialize Firebase
+ var config = {
+  apiKey: "AIzaSyDagFfAdLyFHdTLLIeUjTvCmclxhjupry0",
+  authDomain: "contact-form-de355.firebaseapp.com",
+  databaseURL: "https://contact-form-de355.firebaseio.com",
+  projectId: "contact-form-de355",
+  storageBucket: "contact-form-de355.appspot.com",
+  messagingSenderId: "787069547148"
+};
+firebase.initializeApp(config);
+
+
 //form values
 document.getElementById('contact-form').addEventListener('submit',submitForm);
 function submitForm(e){
@@ -78,15 +94,33 @@ function submitForm(e){
   var email = getInput('email');
   var phone  = getInput('phone');
   var message = getInput('message');
-  console.log("phone number is"+phone);
-  console.log("phone number is"+email);
-  console.log("phone number is"+message);
-  console.log("phone number is"+name);
 
-
+  //save values to data base
+  saveMessage(name,email,phone,message);
   
+  document.querySelector("#showalert").style.display ="block";
+  setTimeout(function(){
+    document.querySelector("#showalert").style.display ="none";
+  },3000);
+  document.getElementById('contact-form').reset();
 };
 
+
+//initializing firebase in app
+
+var messageRef = firebase.database().ref('messages');
+
+
+//save message to fire base
+function saveMessage(name,email,phone,message) {
+  var newMessageRef = messageRef.push();
+  newMessageRef.set({
+    name:name,
+    email :email,
+    phone:phone,
+    message :message
+  });
+}
 
 
 

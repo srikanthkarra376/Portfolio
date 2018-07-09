@@ -298,7 +298,15 @@
     background-color: #555;
   }
   
- 
+ #showalert {
+   text-align:center;
+   padding:10px;
+   background-color:#79c879;
+   color:white;
+   margin-bottom:10px;
+   display:none;
+
+ }
   
 
 
