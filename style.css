@@ -233,7 +233,7 @@
     box-sizing: border-box;
     font-size:22px;
   }
-  input[type=submit] {
+  button[type=submit] {
     width: 75%;
     font-size:22px;
     color:#000;
@@ -244,7 +244,7 @@
     cursor: pointer;
    
   }
-  input[type=submit]:hover {
+  button[type=submit]:hover {
     background-color: rgb(16, 107, 224);
     color:white;
    

@@ -63,6 +63,37 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
         $('img').fadeOut(1000);   
     }
   });
+
+//form values
+document.getElementById('contact-form').addEventListener('submit',submitForm);
+function submitForm(e){
+  e.preventDefault();
+  function getInput(id){
+     return document.getElementById(id).value;
+ 
+ 
+  }
+  //get all inputs
+  var name = getInput('name');
+  var email = getInput('email');
+  var phone  = getInput('phone');
+  var message = getInput('message');
+  console.log("phone number is"+phone);
+  console.log("phone number is"+email);
+  console.log("phone number is"+message);
+  console.log("phone number is"+name);
+
+
+  
+};
+
+
+
+
+
+
+
+
   
 
 
